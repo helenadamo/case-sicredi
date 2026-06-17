@@ -141,56 +141,64 @@ def build_pdf(pdf_path: Path) -> None:
         textColor=colors.HexColor(GREEN), alignment=TA_CENTER, spaceAfter=6,
     ))
     styles.add(ParagraphStyle(
-        name="CoverSub", fontName=body_font, fontSize=9.5, leading=12,
+        name="CoverSub", fontName=body_font, fontSize=10, leading=13,
         textColor=colors.HexColor(MUTED), alignment=TA_CENTER, spaceAfter=3,
     ))
     styles.add(ParagraphStyle(
-        name="SectionH1", fontName=display_bold, fontSize=11, leading=13,
-        textColor=colors.HexColor(GREEN), spaceBefore=6, spaceAfter=4,
-    ))
-    styles.add(ParagraphStyle(
-        name="SectionH2", fontName=display_bold, fontSize=9, leading=11,
-        textColor=colors.HexColor(GREEN), spaceBefore=5, spaceAfter=2,
-    ))
-    styles.add(ParagraphStyle(
-        name="Body", fontName=body_font, fontSize=7.5, leading=10,
-        textColor=colors.HexColor(TEXT), alignment=TA_JUSTIFY, spaceAfter=3,
-    ))
-    styles.add(ParagraphStyle(
-        name="BodySmall", fontName=body_font, fontSize=7.2, leading=9.5,
-        textColor=colors.HexColor(MUTED), alignment=TA_JUSTIFY, spaceAfter=2,
-    ))
-    styles.add(ParagraphStyle(
-        name="SicrediBullet", fontName=body_font, fontSize=7.5, leading=10,
-        textColor=colors.HexColor(TEXT), leftIndent=10, spaceAfter=2,
-    ))
-    styles.add(ParagraphStyle(
-        name="Part2H1", fontName=display_bold, fontSize=14, leading=17,
+        name="SectionH1", fontName=display_bold, fontSize=13, leading=16,
         textColor=colors.HexColor(GREEN), spaceBefore=8, spaceAfter=5,
     ))
     styles.add(ParagraphStyle(
-        name="Part2H2", fontName=display_bold, fontSize=12, leading=15,
-        textColor=colors.HexColor(GREEN), spaceBefore=8, spaceAfter=5,
+        name="SectionH2", fontName=display_bold, fontSize=11, leading=14,
+        textColor=colors.HexColor(GREEN), spaceBefore=6, spaceAfter=3,
     ))
     styles.add(ParagraphStyle(
-        name="Part2Body", fontName=body_font, fontSize=11, leading=14,
-        textColor=colors.HexColor(TEXT), alignment=TA_JUSTIFY, spaceAfter=5,
+        name="Body", fontName=body_font, fontSize=10, leading=13,
+        textColor=colors.HexColor(TEXT), alignment=TA_JUSTIFY, firstLineIndent=0.5 * cm, spaceAfter=5,
     ))
     styles.add(ParagraphStyle(
-        name="Part2Cell", fontName=body_font, fontSize=11, leading=12.4,
+        name="BodySmall", fontName=body_font, fontSize=9, leading=12,
+        textColor=colors.HexColor(MUTED), alignment=TA_JUSTIFY, firstLineIndent=0.5 * cm, spaceAfter=4,
+    ))
+    styles.add(ParagraphStyle(
+        name="SicrediBullet", fontName=body_font, fontSize=10, leading=13,
+        textColor=colors.HexColor(TEXT), leftIndent=12, spaceAfter=4,
+    ))
+    styles.add(ParagraphStyle(
+        name="TableCell", fontName=body_font, fontSize=8.5, leading=10.5,
         textColor=colors.HexColor(TEXT), spaceAfter=0,
     ))
     styles.add(ParagraphStyle(
-        name="Part2CellStrong", fontName=body_bold, fontSize=11, leading=12.4,
-        textColor=colors.HexColor(GREEN), spaceAfter=0,
-    ))
-    styles.add(ParagraphStyle(
-        name="Part2HeaderCell", fontName=display_bold, fontSize=11, leading=12.4,
+        name="TableHeader", fontName=display_bold, fontSize=8.5, leading=10.5,
         textColor=colors.white, spaceAfter=0,
     ))
     styles.add(ParagraphStyle(
-        name="Part2Note", fontName=body_font, fontSize=11, leading=14,
-        textColor=colors.HexColor(MUTED), alignment=TA_JUSTIFY, spaceAfter=5,
+        name="Part2H1", fontName=display_bold, fontSize=13, leading=16,
+        textColor=colors.HexColor(GREEN), spaceBefore=8, spaceAfter=5,
+    ))
+    styles.add(ParagraphStyle(
+        name="Part2H2", fontName=display_bold, fontSize=11, leading=14,
+        textColor=colors.HexColor(GREEN), spaceBefore=6, spaceAfter=3,
+    ))
+    styles.add(ParagraphStyle(
+        name="Part2Body", fontName=body_font, fontSize=10, leading=13,
+        textColor=colors.HexColor(TEXT), alignment=TA_JUSTIFY, firstLineIndent=0.5 * cm, spaceAfter=5,
+    ))
+    styles.add(ParagraphStyle(
+        name="Part2Cell", fontName=body_font, fontSize=8.8, leading=11,
+        textColor=colors.HexColor(TEXT), spaceAfter=0,
+    ))
+    styles.add(ParagraphStyle(
+        name="Part2CellStrong", fontName=body_bold, fontSize=8.8, leading=11,
+        textColor=colors.HexColor(GREEN), spaceAfter=0,
+    ))
+    styles.add(ParagraphStyle(
+        name="Part2HeaderCell", fontName=display_bold, fontSize=8.8, leading=11,
+        textColor=colors.white, spaceAfter=0,
+    ))
+    styles.add(ParagraphStyle(
+        name="Part2Note", fontName=body_font, fontSize=9, leading=12,
+        textColor=colors.HexColor(MUTED), alignment=TA_JUSTIFY, firstLineIndent=0.5 * cm, spaceAfter=4,
     ))
 
     class RoundedTable(Flowable):
@@ -251,7 +259,7 @@ def build_pdf(pdf_path: Path) -> None:
                 c.setLineWidth(0.8)
                 c.roundRect(x, 0, box_w, self.box_h, 5, fill=1, stroke=1)
                 c.setFillColor(colors.HexColor(GREEN))
-                c.setFont(display_bold, 11.2)
+                c.setFont(display_bold, 10)
                 c.drawCentredString(x + box_w / 2, 0.28 * cm, label)
                 c.restoreState()
                 if idx < len(self.steps) - 1:
@@ -268,7 +276,7 @@ def build_pdf(pdf_path: Path) -> None:
                     c.restoreState()
                 x += box_w + self.gap
 
-    def _tbl(font_size: float = 7.2) -> TableStyle:
+    def _tbl(font_size: float = 8.8) -> TableStyle:
         return TableStyle([
             ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor(GREEN)),
             ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
@@ -280,10 +288,10 @@ def build_pdf(pdf_path: Path) -> None:
             ("LINEBELOW", (0, 0), (-1, 0), 0.5, colors.HexColor(GREEN_LIGHT)),
             ("INNERGRID", (0, 1), (-1, -1), 0.2, colors.HexColor("#D8E8D0")),
             ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor(GREEN_SOFT)]),
-            ("TOPPADDING", (0, 0), (-1, -1), 5),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
-            ("LEFTPADDING", (0, 0), (-1, -1), 6),
-            ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+            ("TOPPADDING", (0, 0), (-1, -1), 4),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+            ("LEFTPADDING", (0, 0), (-1, -1), 5),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 5),
         ])
 
     def _report_table(data: list, colWidths: list, style: TableStyle) -> RoundedTable:
@@ -298,6 +306,15 @@ def build_pdf(pdf_path: Path) -> None:
     def _section_title(num, title: str) -> str:
         return _clean_text(f"{num}. {title}")
 
+    def _cell(text, *, header: bool = False) -> Paragraph:
+        return Paragraph(str(text), styles["TableHeader" if header else "TableCell"])
+
+    def _wrap_rows(rows: list[list]) -> list[list]:
+        wrapped = []
+        for row_idx, row in enumerate(rows):
+            wrapped.append([_cell(value, header=(row_idx == 0)) for value in row])
+        return wrapped
+
     def _p2_cell(text: str, strong: bool = False) -> Paragraph:
         return Paragraph(text, styles["Part2CellStrong" if strong else "Part2Cell"])
 
@@ -310,12 +327,12 @@ def build_pdf(pdf_path: Path) -> None:
         canvas.setStrokeColor(colors.HexColor(GREEN_LIGHT))
         canvas.setLineWidth(0.4)
         canvas.line(margin, A4[1] - 1.3 * cm, A4[0] - margin, A4[1] - 1.3 * cm)
-        canvas.setFont(body_font, 6.5)
+        canvas.setFont(body_font, 7.5)
         canvas.setFillColor(colors.HexColor(MUTED))
         canvas.drawString(margin, 0.9 * cm, f"Sicredi, Triagem SAC/PRSAC, {TODAY}")
         canvas.drawRightString(A4[0] - margin, 0.9 * cm, f"Página {doc.page}")
         if doc.page > 1:
-            canvas.setFont(display_bold, 7.5)
+            canvas.setFont(display_bold, 8)
             canvas.setFillColor(colors.HexColor(GREEN))
             canvas.drawString(margin, A4[1] - 1.1 * cm, f"{REPORT_TITLE}, {REPORT_TAGLINE}")
         canvas.restoreState()
@@ -355,19 +372,19 @@ def build_pdf(pdf_path: Path) -> None:
     arch_rows = [
         ["Camada", "Diretório", "Papel"],
         ["Config", "scripts/score_config.py", "Pesos internos da matriz de triagem (fonte única)"],
-        ["Pipeline", "scripts/run_pipeline.py", "Execucao unificada por perfil"],
-        ["Etapas auditaveis", "scripts/00-14", "Ingestao, limpeza, cruzamento, score e export separados"],
+        ["Pipeline", "scripts/run_pipeline.py", "Execução unificada por perfil"],
+        ["Etapas auditáveis", "scripts/00-14", "Ingestão, limpeza, cruzamento, score e export separados"],
         ["Dados brutos", "raw_data/", "CAR, IBAMA, FUNAI, MapBiomas, FBDS, clima"],
         ["Processado", "processed/geopackage/", "Camadas limpas e interseções dissolvidas"],
-        ["Saídas", "output/tables|maps|report/", "CSVs, XLSX, PDF tecnico e anexo cartografico"],
+        ["Saídas", "output/tables|maps|report/", "CSVs, XLSX, PDF técnico e anexo cartográfico"],
         ["WebGIS", "frontend/src/data/", "JSON estático (scripts 08 e 14)"],
         ["API", "backend/", "FastAPI opcional sobre os JSONs"],
         ["Docs", "docs/", "Metodologia, fontes e matriz de triagem"],
     ]
     _append_table(
-        arch_rows,
-        colWidths=[2.3 * cm, 4.7 * cm, 8.5 * cm],
-        style=_tbl(font_size=7.2),
+        _wrap_rows(arch_rows),
+        colWidths=[3.2 * cm, 4.9 * cm, 7.4 * cm],
+        style=_tbl(font_size=8.8),
         after=0.28 * cm,
     )
     story.append(Paragraph(
@@ -376,9 +393,9 @@ def build_pdf(pdf_path: Path) -> None:
         styles["BodySmall"],
     ))
     story.append(Paragraph(
-        "Os scripts numerados foram mantidos como trilha auditavel, nao como requisito de execucao manual. "
+        "Os scripts numerados foram mantidos como trilha auditável, não como requisito de execução manual. "
         "O comando <i>run_pipeline.py</i> orquestra a rotina completa; as etapas separadas permitem reprocessar apenas "
-        "a base ou metrica afetada, revisar evidencias intermediarias e migrar a solucao para scheduler/PostGIS com governanca.",
+        "a base ou métrica afetada, revisar evidências intermediárias e migrar a solução para scheduler/PostGIS com governança.",
         styles["BodySmall"],
     ))
     story.append(PageBreak())
@@ -392,15 +409,15 @@ def build_pdf(pdf_path: Path) -> None:
         ["03_clean_layers", "make_valid, CRS, área", "processed/geopackage/*"],
         ["04_intersections", "overlay + dissolve por tema", "intersections_wide.csv"],
         ["05_risk_scoring", "Restrição atual + classe", "risk_summary.csv"],
-        ["06_generate_maps", "Anexo cartografico em PDF", "anexo_mapas_socioambientais.pdf"],
+        ["06_generate_maps", "Anexo cartográfico em PDF", "anexo_mapas_socioambientais.pdf"],
         ["08/14", "Export WebGIS base + avançado", "frontend/src/data/*"],
         ["09-10", "Buffers 5/10 km, distâncias", "context_metrics, distances"],
         ["11-13", "Clima, entorno e classificação consolidada", "integrated_credit_risk.csv"],
     ]
     _append_table(
-        pipe_rows,
-        colWidths=[3.2 * cm, 5.5 * cm, 6.8 * cm],
-        style=_tbl(font_size=7.2),
+        _wrap_rows(pipe_rows),
+        colWidths=[3.5 * cm, 5.4 * cm, 6.6 * cm],
+        style=_tbl(font_size=8.8),
     )
     story.append(Paragraph(_section_title("3.1", "Módulos e cruzamento"), styles["SectionH2"]))
     story.append(Paragraph(
@@ -412,9 +429,9 @@ def build_pdf(pdf_path: Path) -> None:
         styles["Body"],
     ))
     story.append(Paragraph(
-        "A granularidade dos scripts replica uma rotina controlavel de risco: cada etapa deixa insumos, intermediarios "
-        "e saidas verificaveis em <i>raw_data/</i>, <i>processed/</i> ou <i>output/</i>. Para apresentacao e reproducao do case, "
-        "a interface operacional e o <i>scripts/run_pipeline.py</i>, com perfis <i>full</i>, <i>base</i>, <i>advanced</i> e <i>publish</i>.",
+        "A granularidade dos scripts replica uma rotina controlável de risco: cada etapa deixa insumos, intermediários "
+        "e saídas verificáveis em <i>raw_data/</i>, <i>processed/</i> ou <i>output/</i>. Para apresentação e reprodução do case, "
+        "a interface operacional é o <i>scripts/run_pipeline.py</i>, com perfis <i>full</i>, <i>base</i>, <i>advanced</i> e <i>publish</i>.",
         styles["BodySmall"],
     ))
     # Metodologia + referências
@@ -440,9 +457,9 @@ def build_pdf(pdf_path: Path) -> None:
         f"Baixo≤{sc.IRSA_CLASS_MEDIO_SCORE}; Médio≤{sc.IRSA_CLASS_ALTO_SCORE}",
     ])
     _append_table(
-        irsa_rows,
+        _wrap_rows(irsa_rows),
         colWidths=[3.0 * cm, 1.2 * cm, 3.8 * cm, 5.5 * cm],
-        style=_tbl(font_size=7),
+        style=_tbl(font_size=8.5),
         after=0.18 * cm,
     )
 
@@ -454,16 +471,16 @@ def build_pdf(pdf_path: Path) -> None:
         label, src = IPT_DIM_LABELS.get(k, (k, ""))
         icrc_ipt_rows.append(["Entorno", label, str(w), f"{src}, anel 5-10 km"])
     _append_table(
-        icrc_ipt_rows,
-        colWidths=[1.5 * cm, 3.5 * cm, 1.2 * cm, 6.3 * cm],
-        style=_tbl(font_size=7),
+        _wrap_rows(icrc_ipt_rows),
+        colWidths=[1.8 * cm, 3.4 * cm, 1.2 * cm, 7.1 * cm],
+        style=_tbl(font_size=8.5),
         after=0.22 * cm,
     )
 
     blend = sc.IRTC_BLEND
     prox = ", ".join(f"{int(d)}m={int(f*100)}%" for d, f in sc.PROXIMITY_BANDS_M)
     story.append(Paragraph(
-        f"<b>Classificação consolidada</b> = {blend['irsa']:.0%}×restrição + {blend['icrc']:.0%}×clima + {blend['ipt']:.0%}×entorno. "
+        f"<b>Classificação consolidada</b> = {blend['irsa']:.0%} × restrição + {blend['icrc']:.0%} × clima + {blend['ipt']:.0%} × entorno. "
         f"Classes (&gt;{sc.IRTC_CLASS_ALTO} Alto; &gt;{sc.IRTC_CLASS_MEDIO} Médio) com <b>piso dimensional</b> "
         f"(<i>dimension_floor</i>). Entorno usa bandas {prox}. Bioma IBGE é contexto visual, fora do score.",
         styles["BodySmall"],
@@ -480,9 +497,9 @@ def build_pdf(pdf_path: Path) -> None:
         ["Regulatório", "CMN 4.943/4.945, 5.193; IFRS S2", "PRSAC, MCR, risco climático"],
     ]
     _append_table(
-        ref_rows,
+        _wrap_rows(ref_rows),
         colWidths=[2.2 * cm, 5.0 * cm, 6.3 * cm],
-        style=_tbl(font_size=6.8),
+        style=_tbl(font_size=8.5),
         after=0.12 * cm,
     )
     story.append(Paragraph(
@@ -507,9 +524,9 @@ def build_pdf(pdf_path: Path) -> None:
             str(r.get("irtc_class", r.get("restriction_class", ""))),
         ])
     _append_table(
-        res_rows,
+        _wrap_rows(res_rows),
         colWidths=[1.4 * cm, 0.8 * cm, 1.7 * cm, 1.2 * cm, 1.2 * cm, 1.2 * cm, 1.2 * cm, 1.8 * cm],
-        style=_tbl(font_size=7.2),
+        style=_tbl(font_size=8.6),
         after=0.24 * cm,
     )
     story.append(Paragraph(
@@ -518,9 +535,9 @@ def build_pdf(pdf_path: Path) -> None:
     ))
     story.append(Paragraph(_section_title(6, "Parte 2 do case, escala nacional e clima"), styles["Part2H1"]))
     story.append(Paragraph(
-        "A prova técnica vira rotina institucional ao separar ingestão, processamento geoespacial, evidência auditável, decisão "
-        "assistida e reprocessamento. Assim, a análise dos quatro CARs passa a operar como desenho de triagem nacional de "
-        "carteira, com versionamento de bases e governança SAC/PRSAC.",
+        "A solução proposta separa ingestão, processamento geoespacial, evidência auditável, decisão assistida e "
+        "reprocessamento. Essa organização permite aplicar a mesma lógica de triagem a uma carteira nacional de CARs, "
+        "com versionamento de bases, rastreabilidade dos resultados e governança SAC/PRSAC.",
         styles["Part2Body"],
     ))
     story.append(ProcessDiagram(doc.width))
@@ -556,8 +573,8 @@ def build_pdf(pdf_path: Path) -> None:
         ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
         ("FONTNAME", (0, 0), (-1, 0), display_bold),
         ("FONTNAME", (0, 1), (-1, -1), body_font),
-        ("FONTSIZE", (0, 0), (-1, -1), 11),
-        ("LEADING", (0, 0), (-1, -1), 13),
+        ("FONTSIZE", (0, 0), (-1, -1), 8.8),
+        ("LEADING", (0, 0), (-1, -1), 11),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#CFE3C3")),
         ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor(GREEN_SOFT)]),

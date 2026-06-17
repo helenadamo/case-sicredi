@@ -40,7 +40,7 @@ export default function Sidebar({ properties, selectedId, onSelect, activeTab, o
   return (
     <aside className="sidebar">
       <div className="sidebar-brand">
-        <img src="/sicredi-logo-clean.png" alt="Sicredi" className="brand-logo" />
+        <img src={`${import.meta.env.BASE_URL}sicredi-logo-clean.png`} alt="Sicredi" className="brand-logo" />
         <div className="brand-text">
           <div className="brand-title">Triagem SAC</div>
           <div className="brand-sub">Crédito Rural</div>

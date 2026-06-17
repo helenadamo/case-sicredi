@@ -81,7 +81,7 @@ const CLIMATE_LAYER_CONFIG: Record<ClimateKey, ClimateLayerConfig> = {
 }
 
 async function fetchLayer(key: DataLayerKey): Promise<[DataLayerKey, GeoJSON.FeatureCollection]> {
-  const response = await fetch(`/data/layers/${DATA_LAYER_FILES[key]}`)
+  const response = await fetch(`${import.meta.env.BASE_URL}data/layers/${DATA_LAYER_FILES[key]}`)
   if (!response.ok) return [key, EMPTY_FEATURE_COLLECTION]
   return [key, await response.json() as GeoJSON.FeatureCollection]
 }

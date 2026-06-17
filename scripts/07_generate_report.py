@@ -437,11 +437,12 @@ def build_pdf(pdf_path: Path) -> None:
     # Metodologia + referências
     story.append(Paragraph(_section_title(4, "Metodologia de score e referências"), styles["SectionH1"]))
     story.append(Paragraph(
-        "Três dimensões independentes convergem na classificação consolidada. A primeira mede restrição legal/objetiva no polígono CAR. "
-        "A segunda mede risco climático prospectivo à capacidade de pagamento (IFRS S2, BCBS 2022). "
-        "A terceira qualifica pressão territorial no entorno sem dupla contagem. As siglas internas do código (IRSA, ICRC, IPT e IRTC) "
-        "não são rating regulatório; são nomes técnicos internos da solução. Pesos em <i>score_config.py</i>, calibrados por materialidade regulatória "
-        "(PRSAC CMN 4.945, Res. CMN 4.943, MCR 2-9/CMN 5.193).",
+        "A classificação consolidada combina três leituras complementares. A primeira avalia restrições socioambientais dentro "
+        "do perímetro do CAR, como embargo, unidade de conservação, APP e desmatamento. A segunda avalia exposição climática "
+        "com impacto potencial na produção e na capacidade de pagamento, como seca, água, hidrografia, fogo e sensibilidade "
+        "agroterritorial. A terceira avalia sinais de pressão no entorno, sem tratar proximidade como restrição automática. "
+        "Os pesos ficam centralizados em <i>score_config.py</i> e seguem a lógica de materialidade regulatória da PRSAC, "
+        "do gerenciamento de risco socioambiental e climático e das regras aplicáveis ao crédito rural.",
         styles["Body"],
     ))
 

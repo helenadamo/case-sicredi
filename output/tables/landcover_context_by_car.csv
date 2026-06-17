@@ -1,0 +1,5 @@
+car_id,agriculture_pct_buffer_5km,native_vegetation_pct_buffer_5km,land_use_change_signal,land_use_confidence
+CAR_01,0.0,100.0,contexto_bioma,Média
+CAR_02,0.0,100.0,contexto_bioma,Média
+CAR_03,0.0,100.0,contexto_bioma,Média
+CAR_04,0.0,100.0,contexto_bioma,Média

@@ -1,0 +1,40 @@
+[
+  {
+    "layer": "fbds_massas_dagua",
+    "status": "ok",
+    "features": 1981,
+    "source": "FBDS",
+    "confidence": "Alta"
+  },
+  {
+    "layer": "fbds_rios_simples",
+    "status": "ok",
+    "features": 99786,
+    "source": "FBDS",
+    "confidence": "Alta"
+  },
+  {
+    "layer": "adaptabrasil_seca_agro",
+    "status": "ok",
+    "features": 4
+  },
+  {
+    "layer": "adaptabrasil_seguranca_hidrica",
+    "status": "ok",
+    "features": 4
+  },
+  {
+    "layer": "wri_aqueduct",
+    "status": "manual_pending",
+    "features": 0
+  },
+  {
+    "layer": "mapbiomas_fire_scars",
+    "status": "ok",
+    "features": 136136,
+    "source": "MapBiomas Fogo Coleção 5",
+    "confidence": "Alta",
+    "resolution_m": 30,
+    "period": "2022-2024"
+  }
+]

@@ -1,0 +1,5 @@
+car_id,car_code,fire_recent_ha_property,fire_recent_5km_ha,fire_years_active,fire_years_list,fire_scars_5km,fire_recurrence_class,fire_data_confidence,fire_source,fire_resolution_m,fire_period
+CAR_01,RS431940647EE57C13C9749C7994C7046FA96E109,0.0,1.2493,1,2023,1,baixa,Alta,MapBiomas Fogo Coleção 5,30,2022-2024
+CAR_02,PR4109401014658F643104BEAAF9A030A42F1D57A,0.0,15.3493,2,"2023,2024",5,media,Alta,MapBiomas Fogo Coleção 5,30,2022-2024
+CAR_03,MT5103254B043C12A67EA4522B06A3CF62467D760,8.1056,2726.7385,3,"2022,2023,2024",126,alta_recorrencia_no_imovel,Alta,MapBiomas Fogo Coleção 5,30,2022-2024
+CAR_04,MT5101407324C35ED3C454FE3AA26F7AC45E282C0,5341.1285,10237.2404,3,"2022,2023,2024",208,alta_recorrencia_no_imovel,Alta,MapBiomas Fogo Coleção 5,30,2022-2024

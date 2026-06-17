@@ -1,0 +1,5 @@
+water_surface_recent_ha,water_surface_historical_mean_ha,water_surface_change_pct,water_trend_class,water_data_confidence,water_source,water_surface_buffer_ha,car_id,car_code
+0.0,,,sem_serie_temporal,Alta,FBDS,0.0,CAR_01,RS431940647EE57C13C9749C7994C7046FA96E109
+0.0,,,sem_serie_temporal,Alta,FBDS,6.041,CAR_02,PR4109401014658F643104BEAAF9A030A42F1D57A
+0.0,,,sem_serie_temporal,Alta,FBDS,6.366,CAR_03,MT5103254B043C12A67EA4522B06A3CF62467D760
+3.8599,,,sem_serie_temporal,Alta,FBDS,12.8281,CAR_04,MT5101407324C35ED3C454FE3AA26F7AC45E282C0

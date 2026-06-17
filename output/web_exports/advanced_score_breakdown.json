@@ -1,0 +1,250 @@
+[
+  {
+    "car_id": "CAR_01",
+    "irtc_score": 9.38,
+    "irtc_class": "Baixo",
+    "restriction_score": 0.0,
+    "icrc_score": 26.32,
+    "icrc_class": "Médio",
+    "ipt_score": 18.7,
+    "ipt_class": "Baixo",
+    "icrc_components": [
+      {
+        "name": "Seca/estresse hídrico",
+        "points": 12.95,
+        "weight": 35
+      },
+      {
+        "name": "Superfície hídrica",
+        "points": 10.0,
+        "weight": 25
+      },
+      {
+        "name": "Hidrografia",
+        "points": 0.0,
+        "weight": 15
+      },
+      {
+        "name": "Sensibilidade agro",
+        "points": 1.5,
+        "weight": 15
+      },
+      {
+        "name": "Fogo/queimada",
+        "points": 1.87,
+        "weight": 10
+      }
+    ],
+    "ipt_components": [
+      {
+        "name": "Proximidade TI/UC",
+        "points": 0.0,
+        "weight": 25
+      },
+      {
+        "name": "Desmatamento entorno",
+        "points": 0.0,
+        "weight": 30
+      },
+      {
+        "name": "Embargos entorno",
+        "points": 0.0,
+        "weight": 20
+      },
+      {
+        "name": "Fogo entorno",
+        "points": 1.87,
+        "weight": 10
+      }
+    ],
+    "executive_summary": "Risco integrado baixo, puxado por monitoramento padrão. Fluxo normal de triagem com monitoramento periódico.",
+    "credit_recommendation": "Fluxo normal de triagem com monitoramento periódico.",
+    "confidence_level": "Média"
+  },
+  {
+    "car_id": "CAR_02",
+    "irtc_score": 35.02,
+    "irtc_class": "Médio",
+    "restriction_score": 36.74,
+    "icrc_score": 35.85,
+    "icrc_class": "Médio",
+    "ipt_score": 26.78,
+    "ipt_class": "Médio",
+    "icrc_components": [
+      {
+        "name": "Seca/estresse hídrico",
+        "points": 14.35,
+        "weight": 35
+      },
+      {
+        "name": "Superfície hídrica",
+        "points": 10.0,
+        "weight": 25
+      },
+      {
+        "name": "Hidrografia",
+        "points": 0.0,
+        "weight": 15
+      },
+      {
+        "name": "Sensibilidade agro",
+        "points": 1.5,
+        "weight": 15
+      },
+      {
+        "name": "Fogo/queimada",
+        "points": 10.0,
+        "weight": 10
+      }
+    ],
+    "ipt_components": [
+      {
+        "name": "Proximidade TI/UC",
+        "points": 0.0,
+        "weight": 25
+      },
+      {
+        "name": "Desmatamento entorno",
+        "points": 2.05,
+        "weight": 30
+      },
+      {
+        "name": "Embargos entorno",
+        "points": 0.0,
+        "weight": 20
+      },
+      {
+        "name": "Fogo entorno",
+        "points": 10.0,
+        "weight": 10
+      }
+    ],
+    "executive_summary": "Risco integrado médio, puxado por monitoramento padrão. Análise complementar, condicionantes e monitoramento recorrente.",
+    "credit_recommendation": "Análise complementar, condicionantes e monitoramento recorrente.",
+    "confidence_level": "Média"
+  },
+  {
+    "car_id": "CAR_03",
+    "irtc_score": 36.39,
+    "irtc_class": "Alto",
+    "restriction_score": 15.0,
+    "icrc_score": 49.55,
+    "icrc_class": "Médio",
+    "ipt_score": 100.0,
+    "ipt_class": "Crítico",
+    "icrc_components": [
+      {
+        "name": "Seca/estresse hídrico",
+        "points": 22.05,
+        "weight": 35
+      },
+      {
+        "name": "Superfície hídrica",
+        "points": 10.0,
+        "weight": 25
+      },
+      {
+        "name": "Hidrografia",
+        "points": 0.0,
+        "weight": 15
+      },
+      {
+        "name": "Sensibilidade agro",
+        "points": 7.5,
+        "weight": 15
+      },
+      {
+        "name": "Fogo/queimada",
+        "points": 10.0,
+        "weight": 10
+      }
+    ],
+    "ipt_components": [
+      {
+        "name": "Proximidade TI/UC",
+        "points": 0.0,
+        "weight": 25
+      },
+      {
+        "name": "Desmatamento entorno",
+        "points": 0.0,
+        "weight": 30
+      },
+      {
+        "name": "Embargos entorno",
+        "points": 0.0,
+        "weight": 20
+      },
+      {
+        "name": "Fogo entorno",
+        "points": 10.0,
+        "weight": 10
+      }
+    ],
+    "executive_summary": "Risco integrado alto, puxado por pressão territorial e risco climático. Diligência de conformidade e revisão especializada antes da decisão de crédito.",
+    "credit_recommendation": "Diligência de conformidade e revisão especializada antes da decisão de crédito.",
+    "confidence_level": "Média"
+  },
+  {
+    "car_id": "CAR_04",
+    "irtc_score": 65.0,
+    "irtc_class": "Alto",
+    "restriction_score": 64.89,
+    "icrc_score": 35.65,
+    "icrc_class": "Médio",
+    "ipt_score": 100.0,
+    "ipt_class": "Crítico",
+    "icrc_components": [
+      {
+        "name": "Seca/estresse hídrico",
+        "points": 17.15,
+        "weight": 35
+      },
+      {
+        "name": "Superfície hídrica",
+        "points": 2.5,
+        "weight": 25
+      },
+      {
+        "name": "Hidrografia",
+        "points": 0.0,
+        "weight": 15
+      },
+      {
+        "name": "Sensibilidade agro",
+        "points": 6.0,
+        "weight": 15
+      },
+      {
+        "name": "Fogo/queimada",
+        "points": 10.0,
+        "weight": 10
+      }
+    ],
+    "ipt_components": [
+      {
+        "name": "Proximidade TI/UC",
+        "points": 0.0,
+        "weight": 25
+      },
+      {
+        "name": "Desmatamento entorno",
+        "points": 35.0,
+        "weight": 30
+      },
+      {
+        "name": "Embargos entorno",
+        "points": 25.0,
+        "weight": 20
+      },
+      {
+        "name": "Fogo entorno",
+        "points": 10.0,
+        "weight": 10
+      }
+    ],
+    "executive_summary": "Risco integrado alto, puxado por pressão territorial e restrição ambiental. Diligência de conformidade e revisão especializada antes da decisão de crédito.",
+    "credit_recommendation": "Diligência de conformidade e revisão especializada antes da decisão de crédito.",
+    "confidence_level": "Média"
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "car_id": "CAR_01",
+    "index_type": "restriction",
+    "components": [
+      {
+        "criterion": "Embargo IBAMA",
+        "weight": 35,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Terra Indígena",
+        "weight": 25,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Unidade de Conservação",
+        "weight": 15,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Desmatamento",
+        "weight": 10,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "APP (FBDS)",
+        "weight": 15,
+        "value": 0.0,
+        "pct": 0.0
+      }
+    ],
+    "total": 0.0
+  },
+  {
+    "car_id": "CAR_02",
+    "index_type": "restriction",
+    "components": [
+      {
+        "criterion": "Embargo IBAMA",
+        "weight": 35,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Terra Indígena",
+        "weight": 25,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Unidade de Conservação",
+        "weight": 15,
+        "value": 15,
+        "pct": 94.4212
+      },
+      {
+        "criterion": "Desmatamento",
+        "weight": 10,
+        "value": 6.7353,
+        "pct": 6.7353
+      },
+      {
+        "criterion": "APP (FBDS)",
+        "weight": 15,
+        "value": 15,
+        "pct": 12.1168
+      }
+    ],
+    "total": 36.74
+  },
+  {
+    "car_id": "CAR_03",
+    "index_type": "restriction",
+    "components": [
+      {
+        "criterion": "Embargo IBAMA",
+        "weight": 35,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Terra Indígena",
+        "weight": 25,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Unidade de Conservação",
+        "weight": 15,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Desmatamento",
+        "weight": 10,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "APP (FBDS)",
+        "weight": 15,
+        "value": 15,
+        "pct": 12.4339
+      }
+    ],
+    "total": 15.0
+  },
+  {
+    "car_id": "CAR_04",
+    "index_type": "restriction",
+    "components": [
+      {
+        "criterion": "Embargo IBAMA",
+        "weight": 35,
+        "value": 35,
+        "pct": 10.5801
+      },
+      {
+        "criterion": "Terra Indígena",
+        "weight": 25,
+        "value": 0.0,
+        "pct": 0.0
+      },
+      {
+        "criterion": "Unidade de Conservação",
+        "weight": 15,
+        "value": 15,
+        "pct": 24.8842
+      },
+      {
+        "criterion": "Desmatamento",
+        "weight": 10,
+        "value": 5.2444,
+        "pct": 5.2444
+      },
+      {
+        "criterion": "APP (FBDS)",
+        "weight": 15,
+        "value": 9.641549999999999,
+        "pct": 6.4277
+      }
+    ],
+    "total": 64.89
+  }
+]

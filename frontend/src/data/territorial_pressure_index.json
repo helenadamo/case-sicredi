@@ -1,0 +1,62 @@
+[
+  {
+    "car_id": "CAR_01",
+    "car_code": "RS431940647EE57C13C9749C7994C7046FA96E109",
+    "ipt_score": 18.7,
+    "ipt_class": "Baixo",
+    "protected_area_proximity_component": 0.0,
+    "deforestation_pressure_component": 0.0,
+    "embargo_context_component": 0.0,
+    "fire_context_component": 1.87,
+    "land_use_change_component": 0.0,
+    "main_pressure_driver": "cicatrizes de queimada MapBiomas no entorno",
+    "pressure_interpretation": "O imóvel CAR_01 não apresenta necessariamente sobreposição direta com áreas sensíveis, mas o entorno apresenta sinais de atenção territorial. Isso não configura restrição automática, mas aumenta a necessidade de monitoramento territorial.",
+    "missing_components": "protected_proximity,deforestation,embargo_context",
+    "data_confidence": "Baixa"
+  },
+  {
+    "car_id": "CAR_02",
+    "car_code": "PR4109401014658F643104BEAAF9A030A42F1D57A",
+    "ipt_score": 26.78,
+    "ipt_class": "Médio",
+    "protected_area_proximity_component": 0.0,
+    "deforestation_pressure_component": 2.05,
+    "embargo_context_component": 0.0,
+    "fire_context_component": 10.0,
+    "land_use_change_component": 0.0,
+    "main_pressure_driver": "cicatrizes de queimada MapBiomas no entorno",
+    "pressure_interpretation": "O imóvel CAR_02 não apresenta necessariamente sobreposição direta com áreas sensíveis, mas o entorno apresenta sinais de atenção territorial e possui 0.0 ha de desmatamento no entorno (anel 5 km). Isso não configura restrição automática, mas aumenta a necessidade de monitoramento territorial.",
+    "missing_components": "protected_proximity,embargo_context",
+    "data_confidence": "Baixa"
+  },
+  {
+    "car_id": "CAR_03",
+    "car_code": "MT5103254B043C12A67EA4522B06A3CF62467D760",
+    "ipt_score": 100.0,
+    "ipt_class": "Crítico",
+    "protected_area_proximity_component": 0.0,
+    "deforestation_pressure_component": 0.0,
+    "embargo_context_component": 0.0,
+    "fire_context_component": 10.0,
+    "land_use_change_component": 0.0,
+    "main_pressure_driver": "cicatrizes de queimada MapBiomas no entorno",
+    "pressure_interpretation": "O imóvel CAR_03 não apresenta necessariamente sobreposição direta com áreas sensíveis, mas o entorno apresenta sinais de atenção territorial. Isso não configura restrição automática, mas aumenta a necessidade de monitoramento territorial.",
+    "missing_components": "protected_proximity,deforestation,embargo_context",
+    "data_confidence": "Baixa"
+  },
+  {
+    "car_id": "CAR_04",
+    "car_code": "MT5101407324C35ED3C454FE3AA26F7AC45E282C0",
+    "ipt_score": 100.0,
+    "ipt_class": "Crítico",
+    "protected_area_proximity_component": 0.0,
+    "deforestation_pressure_component": 35.0,
+    "embargo_context_component": 25.0,
+    "fire_context_component": 10.0,
+    "land_use_change_component": 0.0,
+    "main_pressure_driver": "desmatamento e alertas no entorno (anel 5 km)",
+    "pressure_interpretation": "O imóvel CAR_04 não apresenta necessariamente sobreposição direta com áreas sensíveis, mas o entorno apresenta sinais de atenção territorial e possui 94.9 ha de desmatamento no entorno (anel 5 km). Isso não configura restrição automática, mas aumenta a necessidade de monitoramento territorial.",
+    "missing_components": "protected_proximity",
+    "data_confidence": "Baixa"
+  }
+]

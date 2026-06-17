@@ -1,0 +1,54 @@
+[
+  {
+    "car_id": "CAR_01",
+    "index_type": "climate",
+    "components": [
+      {
+        "criterion": "Estresse hídrico (AdaptaBrasil)",
+        "weight": 100,
+        "value": 37.0,
+        "pct": 37.0
+      }
+    ],
+    "total": 37.0
+  },
+  {
+    "car_id": "CAR_02",
+    "index_type": "climate",
+    "components": [
+      {
+        "criterion": "Estresse hídrico (AdaptaBrasil)",
+        "weight": 100,
+        "value": 41.0,
+        "pct": 41.0
+      }
+    ],
+    "total": 41.0
+  },
+  {
+    "car_id": "CAR_03",
+    "index_type": "climate",
+    "components": [
+      {
+        "criterion": "Estresse hídrico (AdaptaBrasil)",
+        "weight": 100,
+        "value": 63.0,
+        "pct": 63.0
+      }
+    ],
+    "total": 63.0
+  },
+  {
+    "car_id": "CAR_04",
+    "index_type": "climate",
+    "components": [
+      {
+        "criterion": "Estresse hídrico (AdaptaBrasil)",
+        "weight": 100,
+        "value": 49.0,
+        "pct": 49.0
+      }
+    ],
+    "total": 49.0
+  }
+]
